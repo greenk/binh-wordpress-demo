@@ -1,0 +1,207 @@
+//Parent Page Style
+
+//Mesa CTA and Sidebar Style
+
+//#page-full-width {
+//  @include grid-row();
+//  margin-top: 1rem;
+//
+//  .main-content {
+//    @include breakpoint(small) {
+//      @include grid-column(12);
+//    }
+//  }
+//
+//
+//}
+
+.mesa-media-object {
+
+  border-bottom: 1px $light-gray solid;
+  padding-bottom: 30px;
+
+  .media-object-section > a > i {
+    color: $yellow;
+  }
+
+  .media-object-section-link {
+    display: block;
+    margin-top: 30px;
+
+    font-size: 1.2rem;
+  }
+
+  .rounded-img > a > img{
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+
+    border: 1px solid $light-gray;
+  }
+}
+
+.service-page-content {
+
+  padding-bottom: 30px;
+}
+
+
+//.mesa-container {
+//  @include grid-row;
+//
+//  .mesa-content {
+//
+//    @include grid-column(70%)
+//  }
+//
+//  .mesa-side-content {
+//    @include grid-column(30%);
+//
+//  }
+//}
+
+
+
+.particular-service-section-type-1 {
+
+  .particular-service-content {
+
+    padding-top: rem-calc(40);
+    padding-bottom: rem-calc(40);
+
+    h2,h3, h4 {
+      color: $white;
+    }
+
+    h4 {
+      color: $service-blue;
+    }
+
+    p {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(30);
+    }
+
+    a.button {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+    }
+
+    span.particular-service-cta-text {
+      color: $service-blue;
+      font-size: 1.2rem;
+      position: relative;
+      top:-5px;
+      left: 10%;
+
+      a {
+        color: $service-blue;
+      }
+
+      i {
+        top: 2px;
+        position: relative;
+        color: $yellow;
+      }
+    }
+  }
+
+  .mesa-side-background {
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+
+  }
+}
+
+.particular-service-section-type-2 {
+
+  .particular-service-content {
+
+    padding-top: rem-calc(40);
+    padding-bottom: rem-calc(40);
+
+    h2,h3, h4 {
+      color: $brand-primary-color;
+    }
+
+    //h4 {
+    //  color: $service-blue;
+    //}
+
+    p {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(30);
+    }
+
+    a.button {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+    }
+
+    span.particular-service-cta-text {
+
+      color: $service-blue;
+      font-size: 1.2rem;
+      position: relative;
+      top:-5px;
+      left: 10%;
+
+      i {
+        top: 2px;
+        position: relative;
+        color: $yellow;
+      }
+    }
+
+  }
+
+  .mesa-side-background {
+
+    //background: url('../images/services/v2/commercial.jpg') no-repeat top center;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+
+  }
+
+
+}
+
+// Small screens /* Define mobile styles */
+@media only screen and (max-width: 39.9375em) {
+  .particular-service-cta-text {
+    display: block;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .particular-service-content-title {
+    font-size: 2.8rem !important;
+  }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .particular-service-cta-text {
+    display: block;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+}
+
+

@@ -1,0 +1,515 @@
+// GO-Mesa-Topbar
+
+.go-mesa-logo {
+  margin-top: 10px;
+}
+
+.go-mesa-menu {
+
+  background-color: $white !important;
+  color: $black !important;
+
+}
+
+.contact-text-navigation {
+  position: relative;
+  top: 12px;
+  right: 17px;
+
+}
+
+.contact-text-navigation-button {
+  position: relative;
+  top: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+}
+
+#siteNavStickyWrap {
+  width: 100%;
+  z-index: 100;
+}
+
+// Tablet and desktop menu
+.top-bar {
+
+  .top-bar-right {
+    margin-top: 12px;
+  }
+
+  z-index: 100;
+
+  padding-bottom: 5px;
+  //border-bottom: 2px solid $brand-primary-color;
+
+  .menu .home a {
+    font-size: 1.5rem;
+    color: $brand-header-text-color;
+  }
+
+  .menu a {
+    height: 45px;
+    line-height: 45px;
+    color: $brand-header-text-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    &:hover:not(.button) {
+      background-color: transparent;
+      color: $brand-secondary-color;
+    }
+  }
+
+  .menu .active > a { background-color: transparent; }
+
+  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu li:not(:last-child) {
+    border-right: none;
+
+  }
+
+  .dropdown.menu .submenu {
+    border: 0;
+
+  }
+
+  .dropdown.menu.is-dropdown-submenu a {
+    font-size: 0.9rem;
+    font-weight: normal;
+    height: 52px;
+
+  }
+
+  .dropdown.menu {
+
+    .submenu > li {
+      border-bottom: 1px solid $light-gray;
+
+      a:hover {
+          background-color: $light-blue;
+      }
+    }
+
+    .submenu > li:last-child {
+      border-bottom: none;
+    }
+
+
+  }
+
+  .dropdown.menu.is-dropdown-submenu {
+    border-top: 4px solid $brand-primary-color;
+    background-color: $white;
+  }
+
+  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
+  .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
+  .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
+
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    right: 0px;
+    margin-top: 0px;
+  }
+
+
+  -webkit-box-shadow: 0px 8px 21px -7px rgba(27,47,112,1);
+  -moz-box-shadow: 0px 8px 21px -7px rgba(27,47,112,1);
+  box-shadow: 0px 8px 21px -7px rgba(27,47,112,1);
+}
+
+
+//GO-Mesa Sidebar Menu
+
+.mesa-accordion-menu {
+
+  margin-bottom: 15px;
+  ul {
+    background-color: $mesa-accordion-bg;
+  }
+
+  ul li {
+    border-bottom: 1px solid $white;
+
+    font-size: 1.1rem;
+  }
+
+  ul li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $brand-primary-color;
+    font-weight: 400;
+  }
+
+  ul li a:hover {
+    background-color: $mesa-accordion-bg-hover;
+  }
+
+  ul.nested {
+    margin-left: 0;
+    padding-left: 1rem;
+    background-color: $mesa-accordion-nested-bg;
+  }
+
+  .active > a {
+    background-color: transparent;
+    color: $brand-primary-color;
+    font-weight: 600;
+  }
+
+  .is-accordion-submenu-parent > a {
+    position: relative;
+
+    &::after {
+      /*@include css-triangle($accordionmenu-arrow-size, $accordionmenu-arrow-color, down);*/
+      border: 0px;
+      font-family: FontAwesome;
+      font-size: 1rem;
+      position: absolute;
+      top: 20px;
+      color: $yellow;
+      right: 25px;
+      /*
+      margin-top: -1 * ($accordionmenu-arrow-size / 2);
+      #{$global-right}: 1rem;
+      */
+
+      content: "\f054";
+
+    }
+  }
+
+  .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
+
+
+    transform: rotate(0deg);
+    transform-origin: 0% 0%;
+
+    font-family: FontAwesome;
+    content: "\f078";
+    right: 30px;
+  }
+
+  .is-accordion-submenu li{
+    font-size: 1rem;
+  }
+
+
+}
+
+.sidebar-testimonial-container {
+
+  text-align: center;
+
+  padding-top: 30px;
+  margin-bottom: 10px;
+
+  padding-right: 10px;
+  padding-left: 10px;
+
+  border: 2px solid $mesa-green;
+
+  border-radius: 6px;
+
+  .review-content {
+    margin-bottom: 15px;
+
+  }
+  .write-a-review-sidebar {
+    margin-top: 10px;
+  }
+
+  .sidebar-testimonial-pre-button, .sidebar-testimonial-next-button {
+    i {
+      color: $yellow;
+    }
+
+    display: none;
+  }
+
+  &:hover .sidebar-testimonial-pre-button, &:hover .sidebar-testimonial-next-button {
+
+    display: block;
+  }
+
+  .review-meta {
+    .review-icons {
+      color: $yellow;
+      font-size: 1.5rem;
+    }
+  }
+
+  .review-sub-meta {
+    .review-name {
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+
+}
+
+
+/* Mobile styles
+----------------------------------------------------*/
+
+// Small screens - /* Define mobile styles */
+@media only screen {
+
+  .top-bar ul {
+    background-color: $white;
+  }
+
+  #mobile-menu {
+    background-color: $white;
+  }
+
+  #menu-mobile-menu {
+    background-color: $white;
+  }
+
+  #menu-mobile-menu li {
+    border-bottom: solid 1px $light-gray;
+    background-color: $white;
+  }
+
+  #menu-mobile-menu li:last-of-type {
+    border-bottom: none;
+  }
+
+  .submenu[aria-hidden="false"] li:first-of-type{
+    //border-top: 2px solid $brand-secondary-color;
+  }
+
+  .title-bar {
+    background-color: $white;
+    color: $brand-primary-color;
+
+    -webkit-box-shadow: 0px 8px 21px -7px rgba(27,47,112,1);
+    -moz-box-shadow: 0px 8px 21px -7px rgba(27,47,112,1);
+    box-shadow: 0px 8px 21px -7px rgba(27,47,112,1);
+
+    z-index: 40;
+
+    .menu-toggle-container {
+      background-color: $brand-primary-color;
+      position: relative;
+    }
+
+    .menu-toggle-button {
+      color: $white;
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .title-bar-title {
+      text-align: center;
+
+    }
+
+
+  }
+
+}
+
+// Small screens /* Define mobile styles */
+@media only screen and (max-width: 39.9375em) {
+
+  #mobile-menu {
+    //margin-top: rem-calc(80);
+    overflow: scroll;
+  }
+
+  .contact-text-navigation {
+    float: none !important;
+    text-align: center;
+    right: 0px;
+    top: 0px;
+
+    border-bottom: 1px solid $brand-secondary-color;
+    padding-bottom: 5px;
+    z-index: 30;
+
+    background-color: $mesa-accordion-bg;
+
+    .contact-text-navigation-button {
+      display: block;
+      font-weight: 700;
+    }
+
+  }
+
+  .top-bar .top-bar-right {
+    border-top: 1px solid $brand-secondary-color;
+    margin-top: 0px;
+  }
+
+  #siteNavStickyWrap {
+    //position: relative;
+    z-index: 200;
+  }
+
+  #snapengage-button {
+    z-index: 99 !important;
+  }
+
+  .top-bar .menu a {
+    font-size: 0.9rem;
+  }
+
+  #mobile-cta-additional {
+    margin-top: 5px;
+
+    .mobile-cta-add-container {
+      background-color: $mesa-accordion-bg;
+
+
+    }
+
+    .mobile-cta-add-left-content a {
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+    }
+
+    .mobile-cta-add-right-content a {
+      font-size: 1rem;
+
+      strong {
+        line-height: 3.0rem;
+      }
+
+    }
+  }
+
+
+}
+
+// Medium screen /* Where foundation doesn't do well */
+
+@media only screen and (min-width: rem-calc(1025)) and (max-width: rem-calc(1169)) {
+
+  .top-bar {
+
+    .menu a {
+      font-size: 0.9rem;
+    }
+
+
+  }
+
+
+}
+
+@media only screen and (min-width: rem-calc(1024)) and (max-width: rem-calc(1026)) {
+
+
+  .top-bar {
+
+    .menu a {
+      font-size: 0.8rem;
+    }
+
+
+  }
+
+}
+
+@media only screen and (min-width: rem-calc(800)) and (max-width: rem-calc(1023)) {
+
+
+  .top-bar {
+
+    .menu a {
+      font-size: 0.9rem;
+    }
+
+
+  }
+
+  .top-bar .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    margin-top: -3px;
+  }
+
+  .mesa-special-menu-text {
+    font-size: 1rem;
+  }
+
+
+
+}
+
+@media only screen and (min-width: rem-calc(640)) and (max-width: rem-calc(1023)) {
+
+
+  .top-bar {
+
+    text-align: center;
+
+    .top-bar-left {
+      float: none;
+
+    }
+
+    .top-bar-right {
+      float: none;
+
+      .contact-text-navigation {
+        float: none;
+        top: 0px;
+        right: 0px;
+      }
+    }
+
+    .menu a {
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+}
+
+@media only screen and (min-width: rem-calc(768)) and (max-width: rem-calc(880)) {
+
+  .top-bar {
+    ul {
+      margin-left: 6%;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: rem-calc(881)) and (max-width: rem-calc(1023)) {
+
+  .top-bar {
+    ul {
+      margin-left: 12%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: rem-calc(640)) and (max-width: rem-calc(767)) {
+
+
+  .top-bar {
+
+    .menu a {
+      font-size: 0.8rem;
+    }
+
+
+  }
+
+
+}

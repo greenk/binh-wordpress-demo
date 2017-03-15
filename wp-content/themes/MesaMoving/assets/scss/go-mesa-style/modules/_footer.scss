@@ -1,0 +1,85 @@
+// Mesa Footer Style
+
+.mesa-footer {
+
+  background-color: $light-blue;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-size: 1rem;
+
+  article {
+    border-bottom: 0px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+
+  ul > li > a {
+    padding: 0.4rem 1rem;
+  }
+
+  a {
+    color: $gray_100;
+  }
+
+  a:hover {
+    color: $brand-secondary-color;
+
+  }
+
+  p {
+    color: $gray_100;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0px;
+    font-size: 0.8rem;
+
+  }
+  .social {
+    text-align: left;
+  }
+  .social a{
+    display:inline-block;
+
+    text-align: center;
+    vertical-align: middle;
+    color: $light-blue;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+  }
+
+  .social a i {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+  }
+}
+
+/* Mobile styles
+----------------------------------------------------*/
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+  .mesa-footer {
+
+    article {
+      margin-bottom: 15px;
+      border-bottom: solid 1px $light-gray;
+      padding-bottom: 5px;
+    }
+
+    .social {
+      text-align: center;
+    }
+  }
+}

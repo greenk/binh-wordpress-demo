@@ -1,0 +1,174 @@
+// Review Page Style
+
+#page-mesa-review {
+
+  .review-container {
+
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: rem-calc(10);
+
+    .review-meta {
+
+      .review-title {
+
+        font-size: 1.5rem;
+
+        .review-icons {
+
+          color: $yellow;
+        }
+
+        .review-name {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+
+      .review-date {
+
+        font-size: 0.9rem;
+        color: $gray_100;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  .mesa-review-form-container {
+
+    $unchecked-star: '\2606';
+    $unchecked-color: #888;
+    $checked-star: '\2605';
+    $checked-color: $yellow;
+
+    background-color: $brand-blue;
+
+    color: $white;
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+
+    .gform_wrapper .gform_body .gform_fields .gfield_label
+    {
+      color: $white;
+      font-weight: 400;
+    }
+
+    #gform_wrapper_2 {
+      .validation_error {
+        color: $white;
+      }
+
+      .gform_footer {
+        text-align: center;
+      }
+    }
+    //style the rating star
+    .gform_wrapper .gform_body .gform_fields #field_2_4.gfield .ginput_container_radio
+    {
+
+      margin-top: 0px;
+
+      .gfield_radio  {
+
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        unicode-bidi: bidi-override;
+        direction: rtl;
+
+        li {
+          display: inline-block;
+
+          /* remove inline-block whitespace */
+          font-size: 0;
+          * {
+            font-size: 1rem;
+          }
+
+
+          & > input {
+
+            display: none;
+            & + label {
+              /* only enough room for the star */
+              display: inline-block;
+              overflow: hidden;
+              //text-indent: 9999px;
+              width: 1em;
+              white-space: nowrap;
+              cursor: pointer;
+
+              font-size: 1.6rem;
+              &:before {
+                display: inline-block;
+                //text-indent: -9999px;
+                content: $unchecked-star;
+                color: $unchecked-color;
+              }
+            }
+
+            //label:before {
+            //
+            //    display: inline-block;
+            //    text-indent: -9999px;
+            //    content: $unchecked-star;
+            //    color: $unchecked-color;
+            //
+            //}
+
+            &:checked ~ label:before {
+              content: $checked-star;
+              color: $checked-color;
+              text-shadow: 0 0 1px #333;
+            }
+
+            //
+            //& + label:hover ~ li {
+            //
+            //  background-color: #fff3d9;
+            //
+            //  content: $checked-star;
+            //  color: #e52;
+            //  text-shadow: 0 0 1px #333;
+            //}
+
+            & + label:hover:before {
+              content: $checked-star;
+              color: $checked-color;
+              text-shadow: 0 0 1px #333;
+            }
+
+          }
+
+          &:hover ~ li > input + label:before {
+
+            content: $checked-star;
+            color: $checked-color;
+            text-shadow: 0 0 1px #333;
+          }
+
+        }
+
+        &:hover > input + label:hover:before {
+          content: $checked-star;
+          color: $checked-color;
+          text-shadow: 0 0 1px #333;
+        }
+      }
+
+      .pseudo-checked-star::before {
+        content: $checked-star !important;
+        color: $checked-color !important;
+        text-shadow: 0 0 1px #333;
+      }
+
+    }
+
+  }
+
+  .gform_wrapper .gform_body .gform_fields #field_2_3.gfield {
+
+    margin-top: 0px;
+  }
+
+}

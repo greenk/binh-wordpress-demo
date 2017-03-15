@@ -1,0 +1,237 @@
+//Mesa CTA and Sidebar Style
+
+#page-full-width {
+  @include grid-row();
+  margin-top: 1rem;
+
+  .main-content {
+    @include breakpoint(small) {
+      @include grid-column(12);
+    }
+  }
+
+}
+
+.mesa-contact {
+
+  text-align: center;
+  padding-top: rem-calc(30);
+  padding-bottom: rem-calc(0);
+
+
+  h1 {
+    color: $brand-primary-color;
+  }
+}
+
+.mesa-contact-form-container {
+
+  background-color: $brand-blue;
+
+  padding-top: rem-calc(30);
+  padding-bottom: rem-calc(30);
+
+  .contact-button {
+    text-transform: uppercase;
+  }
+
+  label {
+    color: $white;
+  }
+}
+
+.mesa-career-container {
+  background-color: $medium-blue;
+
+  color: $white;
+
+  padding-top: rem-calc(15);
+  padding-bottom: rem-calc(30);
+}
+
+.location-contact {
+
+  .location-content {
+    p {
+      text-align: center;
+      color: $white;
+
+      i {
+        color: $yellow;
+      }
+    }
+  }
+
+  .image-overlay-contact {
+    background-color: rgba(16, 74, 140, 0.7);
+
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.gform_wrapper
+{
+  .gform_footer {
+    text-align: center;
+  }
+
+  label span.gfield_required {
+    color: $white;
+
+  }
+
+  .validation_error {
+    color: $white !important;
+    font-size: 1rem !important;
+    font-weight: 200 !important;
+    border-top: 1px solid $yellow !important;
+    border-bottom: 1px solid $yellow !important;
+  }
+
+  .gfield_contains_required .gfield_label {
+    margin-top: 0px;
+  }
+
+  .gfield_description {
+    padding-top: 2px;
+  }
+
+  .gfield_error {
+    background-color: unset !important;
+    border-top: unset !important;
+    border-bottom: unset !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+
+    .gfield_contains_required .gfield_label {
+      margin-top: 0px;
+    }
+
+    .gfield_label {
+      color: $white !important;
+
+      .gfield_required {
+        color: $yellow;
+      }
+    }
+
+  }
+
+  ul li.gfield {
+    margin-top: 0px;
+
+    .gfield_label {
+      font-weight: 400;
+    }
+  }
+
+  .validation_message {
+    font-size: 1rem !important;
+    font-weight: 200 !important;
+    color: red !important;
+  }
+
+  .mesa-radio-inline {
+
+    .gfield_radio li {
+      display: inline-flex;
+      margin-right: rem-calc(30);
+    }
+
+  }
+
+  .ginput_container_fileupload {
+    background-color: $white;
+
+    .gform_button_select_files {
+      border-radius: 5px;
+    }
+  }
+}
+
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+  margin-top: 0px !important;
+}
+
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+  display: inline-flex;
+  margin-right: rem-calc(10px);
+}
+
+.gform_wrapper h2.gsection_title {
+
+  font-weight: 600 !important;
+  font-size: 1.8rem !important;
+  color: $white;
+}
+
+.gform_wrapper li.gfield_error div.ginput_complex.ginput_container label {
+  color: red !important;
+}
+
+.gform_wrapper .top_label .gsection_description {
+  margin-bottom: 0px;
+  color: $white !important;
+  font-size: 0.8rem;
+}
+
+#gform_confirmation_wrapper_1 {
+
+  color: $white;
+  text-align: center;
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(50);
+  border: 1px solid $yellow;
+
+  .gform_confirmation_message_1 {
+    font-size: 1.5rem;
+  }
+}
+
+#gform_confirmation_wrapper_3 {
+
+  color: $white;
+  text-align: center;
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(50);
+  border: 1px solid $yellow;
+
+  .gform_confirmation_message_1 {
+    font-size: 1.5rem;
+  }
+}
+
+.gform_confirmation_wrapper {
+
+  color: $white;
+  text-align: center;
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(50);
+  border: 1px solid $yellow;
+
+  .gform_confirmation_message {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile styles
+----------------------------------------------------*/
+
+// Small screens /* Define mobile styles */
+@media only screen and (max-width: 39.9375em) {
+
+  .gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+    display: block;
+    margin-right: rem-calc(10px);
+  }
+
+}

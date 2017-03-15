@@ -1,0 +1,134 @@
+/**
+ * Mesa Subpage Styles
+ */
+
+.additional-section {
+
+  background-color: $light-blue;
+  //margin-top: 30px;
+
+  .additional-section-right {
+
+    .additional-section-right-content {
+
+      padding-top: rem-calc(20px);
+      padding-left: rem-calc(20px);
+      padding-right: rem-calc(20px);
+      padding-bottom: rem-calc(20px);
+
+      a {
+        font-size: 1.2rem;
+      }
+
+      a i {
+
+        top: 2px;
+        position: relative;
+        color: $yellow;
+        font-size: 1.4rem;
+      }
+    }
+    
+  }
+}
+
+.here-to-help {
+
+  color: $white;
+
+  h2, h3, h4, p{
+    color: $white;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 200;
+  }
+
+  .here-to-help-content {
+
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(60);
+  }
+
+}
+
+.move-for-hunger {
+
+  h2,h3,h4 {
+    color: $white;
+  }
+
+  .mvh-content-container {
+
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(50);
+
+    div.mvh-content {
+      padding-bottom: rem-calc(30);
+    }
+    a.button {
+
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+    }
+
+  }
+  .mesa-side-background {
+    position: relative;
+
+    .mesa-logo-side-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  }
+  .mesa-logo-side-image {
+
+}
+
+.complimentary-updater-services {
+
+  padding-top: rem-calc(40);
+  padding-bottom: rem-calc(40);
+
+  .complimentary-right-title {
+
+    color: $brand-secondary-color;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+
+  }
+
+  .complimentary-checkbox-list {
+
+    list-style: none;
+
+    li:before {
+      font-family: FontAwesome, "Open Sans", Arial, sans-serif;
+
+      content:'\f046  ';
+      color: $brand-secondary-color;
+    }
+  }
+
+}
+
+/* Mobile styles
+----------------------------------------------------*/
+
+// Small screens /* Define mobile styles */
+@media only screen and (max-width: 39.9375em) {
+
+  .complimentary-updater-services {
+    padding-top: rem-calc(0);
+    padding-bottom: rem-calc(0);
+  }
+
+
+}

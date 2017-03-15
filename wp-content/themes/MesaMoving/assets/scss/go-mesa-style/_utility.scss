@@ -1,0 +1,183 @@
+/*------------------------------------------------------------------
+
+    Theme Name: GO-Mesa-Themes
+    Description: Multipurpose HTML5 Template
+    Author: Binh Bui
+    Author URI:
+    Version: 0.1.0
+
+-------------------------------------------------------------------*/
+/* ==============================================================
+							DEFINE MESA VARIABLES
+================================================================= */
+
+//$body-font-family: 'Raleway', sans-serif;
+//$bg_white: rgba(255, 255, 255, 1);
+
+//$brand-primary-color: #0c1b4d;
+
+$brand-primary-color: #191d4c;
+
+//$brand-secondary-color: #507bac;
+
+$brand-secondary-color: #104a8c;
+
+$brand-header-text-color: #191d4c;
+
+$background-secondary: #2c5287;
+
+$yellow: #ffc741;
+
+
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+
+$gray_100: rgba(68, 68, 68, 1);
+$mesa-bg-gray: #f5f5f4;
+$mesa-light-gray: rgba(246, 246, 246, 1);
+
+$mesa-accordion-bg: #d6e3f2;
+$mesa-accordion-bg-hover: #c6d1de;
+$mesa-accordion-nested-bg: #cadcef;
+
+$light-blue: rgba(231, 238, 247, 1);
+$medium-blue: rgba(80, 123, 172, 1);
+$brand-blue: #104a8c;
+$service-blue: #adc8e5;
+
+$mesa-green: #BCED91;
+
+/* ==============================================================
+							UTILITY CLASSES
+================================================================= */
+
+/* Spacing
+-----------------------------------------------------------------*/
+.padding-top-0 {
+  padding-top: 0px !important;
+}
+
+.padding-top-5 {
+  padding-top: 5px !important;
+}
+
+.padding-top-10 {
+  padding-top: 10px !important;
+}
+
+.padding-top-15 {
+  padding-top: 15px !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0px !important;
+}
+
+.padding-bottom-5 {
+  padding-bottom: 5px !important;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px !important;
+}
+
+.padding-bottom-15 {
+  padding-bottom: 15px !important;
+}
+
+
+
+/* Background
+-----------------------------------------------------------------*/
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-mesa-light-gray {
+  background-color: $mesa-light-gray;
+}
+
+.bg-mesa {
+  background-color: $brand-primary-color;
+  color: $white;
+}
+
+.bg-mesa-secondary {
+  background-color: $background-secondary;
+  color: $white;
+}
+
+/* Text
+-----------------------------------------------------------------*/
+.black {
+  color: $black !important;
+}
+
+.mesa-yellow {
+  color: $yellow !important;
+}
+
+.text-24 {
+  font-size: 2.4rem;
+}
+
+.mesa-special-menu-text {
+  font-size: 1.2rem;
+  line-height: 10px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $brand-primary-color;
+}
+
+a {
+  color: $brand-secondary-color;
+}
+
+span, p, div {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+
+.mesa-main-content {
+
+  //margin-top: rem-calc(20);
+  background-color: $mesa-bg-gray;
+
+  .mesa-side-column {
+    margin-top: 15px;
+  }
+
+  .mesa-main-content-area {
+    padding-top: rem-calc(20);
+    background-color: $white;
+  }
+}
+
+
+
+/* Mobile styles
+----------------------------------------------------*/
+
+// Small screens /* Define mobile styles */
+@media only screen and (max-width: 39.9375em) {
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .media-object .media-object-section {
+    padding-bottom: 0 !important;
+  }
+
+
+}
+
+
